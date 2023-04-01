@@ -131,7 +131,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       } catch (error) {
         console.error(error);
         sendResponse({
-          summary: "Error! The reviews for this product might be too long for GPT's capacity",
+          summary: "Error! The reviews for this product might be too long for GPT's current capacity",
         });
       }
     })();

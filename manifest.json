@@ -2,31 +2,26 @@
     "manifest_version": 3,
     "name": "AI Review Summary",
     "version": "1.0.0",
-    "description": "Summarizes product reviews on Flipkart using GPT-3.5-turbo",
+    "description": "Summarizes product reviews on Flipkart using GPT-3.5-turbo AI model",
     "icons": {
-      "48": "icon48.png",
-      "128": "icon128.png"
-    },
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
         "48": "icon48.png",
         "128": "icon128.png"
-      }
     },
-    "permissions": [
-      "activeTab",
-      "scripting"
-    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
     "content_scripts": [
-      {
-        "matches": [
-          "*://*.flipkart.com/*"
-        ],
-        "js": [
-          "content.js"
-        ]
-      }
+        {
+            "matches": [
+                "*://*.flipkart.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
     ]
-  }
-  
+}
