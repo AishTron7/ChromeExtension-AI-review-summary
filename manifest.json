@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "AI Review Summary",
-    "version": "1.0.0",
-    "description": "Summarizes product reviews on Flipkart using GPT-3.5-turbo AI model",
+    "name": "ReviewGPT - AI Summarizes Product-Reviews",
+    "version": "2.0.0",
+    "description": "Summarizes product reviews on Amazon & Flipkart using OpenAI's GPT model",
     "icons": {
         "48": "icon48.png",
         "128": "icon128.png"
@@ -17,7 +17,9 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*.flipkart.com/*"
+                "*://*.flipkart.com/*",
+                "*://*.amazon.com/*",
+                "*://*.amazon.in/*"
             ],
             "js": [
                 "content.js"
